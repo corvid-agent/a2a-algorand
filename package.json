@@ -1,0 +1,41 @@
+{
+  "name": "a2a-algorand",
+  "version": "0.1.0",
+  "description": "A2A (Agent-to-Agent) protocol adapter for Algorand — agent communication over blockchain transactions",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "a2a",
+    "agent-to-agent",
+    "algorand",
+    "blockchain",
+    "ai-agents",
+    "mcp"
+  ],
+  "author": "corvid-agent",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corvid-agent/a2a-algorand.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  },
+  "peerDependencies": {
+    "algosdk": "^3.0.0"
+  }
+}

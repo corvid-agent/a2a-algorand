@@ -176,7 +176,7 @@ export class A2AAlgorandAdapter {
         'X-Algo-API-Token': this.config.algodToken,
         'Content-Type': 'application/x-binary',
       },
-      body: signed,
+      body: signed as unknown as BodyInit,
     });
     if (!res.ok) throw new Error(`submit txn: ${res.status}`);
     const data = await res.json();
